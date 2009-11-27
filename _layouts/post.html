@@ -2,14 +2,15 @@
 <head>
   {% include metatags.html %}
   {% include stylesheets.html %}
-  <title>Rafael Souza</title>
+  <title>{{ page.title }} - Rafael Souza</title>
 </head>
 <body>
   <div id="wrapper">
     <div id="header">
-      <h1>Rafael Souza</h1>
+      <h1><a href="/">Rafael Souza</a></h1>
     </div>
     <div id="content">
+      <h2>{{ page.title }}</h2>
       {{ content }}
     </div>
   </div>
