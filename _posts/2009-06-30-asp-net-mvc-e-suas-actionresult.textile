@@ -1,3 +1,7 @@
+---
+layout: post
+title: ASP.NET MVC e suas ActionResult
+---
 O framework MVC da Microsoft usa um determinado objeto para definir qual tipo de resultado/output a _action_ executada deve retornar. São eles:
 
 * @ContentResult@ - Pode ser usado para retornar textos simples.
