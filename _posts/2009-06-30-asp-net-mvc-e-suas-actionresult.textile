@@ -1,0 +1,53 @@
+O framework MVC da Microsoft usa um determinado objeto para definir qual tipo de resultado/output a _action_ executada deve retornar. São eles:
+
+* @ContentResult@ - Pode ser usado para retornar textos simples.
+* @EmptyResult@ - Esse serve para retornar resultados em branco, quando quiser que o output seja vazio.
+* @HttpUnauthorizedResult@ - Usado quando o usuário não tem permissão para executar a action. Retorna o 401 como _status_ da requisição.
+* @JsonResult@ - Serializa um objeto em formato JSON, bom para ser usando em requisições AJAX.
+* @RedirectResult@ - Resultado usado para redirecionamentos.
+* @RedirectToRouteResult@ - Também usado para redirecionamentos, mas a URL está ligada a uma rota.
+* @ViewResultBase@ - Classe abstrata, usada para renderizar HTMLs.
+** @PartialViewResult@ - Estende @ViewResultBase@ para renderizar as views e seus HTMLs.
+* @BinaryResult@ - Classe abstrata usada para resultados binários.
+** @BinaryStreamResult@ - Estende @BinaryResult@, pode ser usado para escrever imagens direto no stream do resutado.
+
+Porém, em alguns casos, retornar um texto simples, ou um JSON pequeninho, é meio chato. Considere o código abaixo:
+
+{% highlight c# %}
+JsonResult json = new JsonResult();
+json.ContentType = "text/javascript";
+json.Data = new { success = true };
+return json;
+{% endhighlight %}
+
+Isso poderia ser mais simples não? Porém, a classe @JsonResult@, e nenhuma outra @ActionResult@ aceita parâmetros no construtor. Por isso criei "duas classes":http://gist.github.com/138225 que podem ser usadas como @ActionResult@, para simplificar essa tarefa. Elas devem ser usadas assim:
+
+{% highlight c# %}
+return new SimpleResult("Hello World");
+return new SimpleResult(1);
+return new SimpleResult(1257.14);
+return new SimpleResult(true);
+{% endhighlight %}
+
+e
+
+{% highlight c# %}
+return new SimpleJsonResult(new { success = true });
+{% endhighlight %}
+
+Pronto, agora é hora de refatorar código. :)
+
+*UPDATE:* Conforme o Guilherme comentou ali embaixo, o ASP.NET MVC tem um método que já simplifica as coisas.
+
+{% highlight c# %}
+return Json("Hello World");
+return Json(1);
+return Json(1257.14);
+return Json(true);
+{% endhighlight %}
+
+e
+
+{% highlight c# %}
+return Json(new { success = true });
+{% endhighlight %}
