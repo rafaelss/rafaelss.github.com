@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: "PDO: bindParam ou bindValue?"
+wordpress_id: 39
+wordpress_url: http://rafaelss.com/?p=39
+---
+Programando hoje uma validação para o framework que estou desenvolvendo me deparei com um problema usando variáveis em SQL, mais especificamente usando variáveis com o PDO.
+
+Escrevendo os testes unitários para essas validações notei que precisava mudar a forma como passava os parâmetros para a SQL, ao invés de passar no @execute@, precisaria passar usando uma função própria para isso.
+
+Lendo o manual, achei três opções de bind, @bindColumn@, @bindParam@ e @bindValue@, depois de ler a documentação, optei pela @bindParam@, pois @bindColumn@ é usado para atribuir o resultado para uma variável diretamente e bindColumn... eu só fui ver depois :P
+
+Meus testes já estavam prontos e passando corretamente, mas quando fiz a mudança começou a não passar mais, então comecei a debugar para ver o que estava acontecendo. Depois de horas perdidas descobri o problema, não posso usar @bindParam@, tenho que usar @bindValue@.
+
+O método @bindParam@ recebe o valor do parâmetro por referência, então se o valor da variável mudar entre o chamada de @bindParam@ e @execute@, o valor do parâmetro muda, alterando o resultado da SQL, coloquei @bindValue@ e tudo voltou ao normal, com os testes passando novamente. Mas o que me deixa intrigado é que o meu código não mudava nada na variável, não tinha nada entre os métodos que pudesse fazer com o o resultado fosse diferente.
+
+Mas fica a lição, ler a documentação melhor da próxima vez ;)
