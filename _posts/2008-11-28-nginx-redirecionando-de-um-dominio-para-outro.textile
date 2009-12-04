@@ -1,14 +1,14 @@
 --- 
 layout: post
-title: "nginx: Redirecionando de um domÌnio para outro"
+title: "nginx: Redirecionando de um dom√≠nio para outro"
 wordpress_id: 28
 wordpress_url: http://stagging.rafaelss.com/?p=28
 ---
-Semana passada eu resolvi mudar o domÌnio do blog, usar algo mais pessoal, e acabei escolhendo http://rafaelss.com, mais simples, mais curto, tem meu nome, enfim, muito melhor :)
+Semana passada eu resolvi mudar o dom√≠nio do blog, usar algo mais pessoal, e acabei escolhendo http://rafaelss.com, mais simples, mais curto, tem meu nome, enfim, muito melhor :)
 
-Mas com isso veio a necessidade de redirecionar do domÌnio antigo, http://www.joeh.com.br, para o novo.
+Mas com isso veio a necessidade de redirecionar do dom√≠nio antigo, http://www.joeh.com.br, para o novo.
 
-Isso È muito f·cil.
+Isso √© muito f√°cil.
 
 {% highlight conf %}
 server {
@@ -18,4 +18,4 @@ server {
 }
 {% endhighlight %}
 
-Com isso todos os links que apontam para o domÌnio velho s„o redirecionados para o novo, com o _permanent_ ali as buscas se entendem, a indexaÁ„o n„o È afetada, e tudo continua funcionando normalmente como era antes.
+Com isso todos os links que apontam para o dom√≠nio velho s√£o redirecionados para o novo, com o _permanent_ ali as buscas se entendem, a indexa√ß√£o n√£o √© afetada, e tudo continua funcionando normalmente como era antes.

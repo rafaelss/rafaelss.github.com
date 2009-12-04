@@ -4,15 +4,15 @@ title: jQuery, Safari e CSS Selectors
 wordpress_id: 79
 wordpress_url: http://rafaelss.com/?p=79
 ---
-Hoje estava verificando um bug em um projeto, que acontecia somente no Safari, tanto no MacOS, quanto no Windows, e descobri que o problema era a forma como eu estava definindo o elemento HTML envolvido na histÛria.
+Hoje estava verificando um bug em um projeto, que acontecia somente no Safari, tanto no MacOS, quanto no Windows, e descobri que o problema era a forma como eu estava definindo o elemento HTML envolvido na hist√≥ria.
 
-O express„o que eu estava usando era a seguinte:
+O express√£o que eu estava usando era a seguinte:
 
 {% highlight javascript %}
 $("#meuform input[type='hidden'][value='']").length
 {% endhighlight %}
 
-No Safari sempre me retornava 0, j· no Firefox e Internet Explorer, retorna 1, que era para ser o valor certo no caso. Analisando como o input estava definido eu descobri o problema, ele estava definido assim:
+No Safari sempre me retornava 0, j√° no Firefox e Internet Explorer, retorna 1, que era para ser o valor certo no caso. Analisando como o input estava definido eu descobri o problema, ele estava definido assim:
 
 {% highlight html %}
 &lt;input type="hidden" name="first_user" /&gt;
@@ -20,5 +20,5 @@ No Safari sempre me retornava 0, j· no Firefox e Internet Explorer, retorna 1, q
 
 Resumindo:
 
-O Safari n„o acha elementos onde o atributo filtrado n„o esteja presente no HTML.
-(Estou usando a vers„o 1.3.2 do jQuery e 4.0 (503.17) do Safari, no Windows, mas reportaram o problema no Mac tambÈm)
+O Safari n√£o acha elementos onde o atributo filtrado n√£o esteja presente no HTML.
+(Estou usando a vers√£o 1.3.2 do jQuery e 4.0 (503.17) do Safari, no Windows, mas reportaram o problema no Mac tamb√©m)

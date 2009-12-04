@@ -4,24 +4,24 @@ title: "C# e c\xF3digos deprecated"
 wordpress_id: 73
 wordpress_url: http://rafaelss.com/?p=73
 ---
-Você desenvolve uma biblioteca de utilitários para facilitar a vida dos outros desenvolvedores da empresa, porém algumas vezes é necessário refatorar códigos, criando/renomeando/apagando alguns métodos.
-Obviamente você não pode sair mudando tudo, existe código "antigo" usando a sua "lib".
+VocÃª desenvolve uma biblioteca de utilitÃ¡rios para facilitar a vida dos outros desenvolvedores da empresa, porÃ©m algumas vezes Ã© necessÃ¡rio refatorar cÃ³digos, criando/renomeando/apagando alguns mÃ©todos.
+Obviamente vocÃª nÃ£o pode sair mudando tudo, existe cÃ³digo "antigo" usando a sua "lib".
 
-Existe um atributo no C# que permite que você marque código como deprecated, é o @Obsolete@, muito útil e fácil de usar.
+Existe um atributo no C# que permite que vocÃª marque cÃ³digo como deprecated, Ã© o @Obsolete@, muito Ãºtil e fÃ¡cil de usar.
 
 {% highlight c# %}
-[Obsolete("Use o método MinhaClasse.MeuMetodo(int parametro)")]
+[Obsolete("Use o mÃ©todo MinhaClasse.MeuMetodo(int parametro)")]
 public static void MeuMetodo(string parametro) {
     // ...
 }
 {% endhighlight %}
 
-No exemplo acima quero que os desenvolvedores usem a versão que recebe um @integer@ como parâmetro, e não mais a versão com @string@.
+No exemplo acima quero que os desenvolvedores usem a versÃ£o que recebe um @integer@ como parÃ¢metro, e nÃ£o mais a versÃ£o com @string@.
 
-Você ainda pode dizer que é para o compilador gerar um erro ao compilar o código, passando @true@ como segundo parâmetro do atributo.
+VocÃª ainda pode dizer que Ã© para o compilador gerar um erro ao compilar o cÃ³digo, passando @true@ como segundo parÃ¢metro do atributo.
 
 {% highlight c# %}
-[Obsolete("Este método não deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)", true)]
+[Obsolete("Este mÃ©todo nÃ£o deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)", true)]
 public static void MeuMetodo(string parametro) {
     // ...
 }  

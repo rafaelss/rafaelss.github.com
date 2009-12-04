@@ -4,7 +4,7 @@ title: Desabilitando validadores do .NET com Javascript
 wordpress_id: 36
 wordpress_url: http://stagging.rafaelss.com/?p=36
 ---
-Mexendo com .NET hoje (eu sei, mas faz parte) tive que descobrir como desabilitar uns validadores com Javascript, e a resposta é bem simples:
+Mexendo com .NET hoje (eu sei, mas faz parte) tive que descobrir como desabilitar uns validadores com Javascript, e a resposta Ã© bem simples:
 
 {% highlight javascript %}
 var myVal = document.getElementById('<%= myValidator.ClientID %>');

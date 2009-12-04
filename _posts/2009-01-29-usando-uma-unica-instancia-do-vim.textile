@@ -1,12 +1,12 @@
 --- 
 layout: post
-title: Usando uma ˙nica inst‚ncia do Vim
+title: Usando uma √∫nica inst√¢ncia do Vim
 wordpress_id: 8
 wordpress_url: http://stagging.rafaelss.com/?p=8
 ---
-Hoje quando li o feed de coment·rios do "blog do TaQ":http://eustaquiorangel.com/ (re)apareceu "uma dica":http://eustaquiorangel.com/posts/477 que ele deu h· um bom tempo, sobre usar uma ˙nica inst‚ncia do Vim para editar arquivos, acho muito chato ter que abrir muitos editores.
+Hoje quando li o feed de coment√°rios do "blog do TaQ":http://eustaquiorangel.com/ (re)apareceu "uma dica":http://eustaquiorangel.com/posts/477 que ele deu h√° um bom tempo, sobre usar uma √∫nica inst√¢ncia do Vim para editar arquivos, acho muito chato ter que abrir muitos editores.
 
-PorÈm a dica que ele deu n„o funcionou para mim, apenas "esta":http://eustaquiorangel.com/posts/477#comentario_587 dos coment·rios, que ao invÈs de usar um alias, usa uma funÁ„o.
+Por√©m a dica que ele deu n√£o funcionou para mim, apenas "esta":http://eustaquiorangel.com/posts/477#comentario_587 dos coment√°rios, que ao inv√©s de usar um alias, usa uma fun√ß√£o.
 
 {% highlight shell %}
 # http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/
@@ -15,6 +15,6 @@ function edit() {
 }
 {% endhighlight %}
 
-Eu mudei o nome para @edit@, acho mais f·cil, mas fica a critÈrio de cada um :)
+Eu mudei o nome para @edit@, acho mais f√°cil, mas fica a crit√©rio de cada um :)
 
 Link do codigo original: http://pastebin.com/f7a69dcd7

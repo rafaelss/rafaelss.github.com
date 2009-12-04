@@ -4,14 +4,14 @@ title: Usando Python e Google App Engine
 wordpress_id: 26
 wordpress_url: http://stagging.rafaelss.com/?p=26
 ---
-No comeÁo do mÍs recebi a liberaÁ„o para usar o "Google App Engine":http://appengine.google.com/, foi o que faltava para eu dar uma brincada com Python.
+No come√ßo do m√™s recebi a libera√ß√£o para usar o "Google App Engine":http://appengine.google.com/, foi o que faltava para eu dar uma brincada com Python.
 
-Onde trabalho, toda a tarde rola de alguÈm ir no mercado comprar uns refrigerantes, mas todo dia era uma "briga" para ver quem ia. Para resolver isso, criamos p·gina simples em PHP que sorteava quem naquele dia ia fazer as compras.
+Onde trabalho, toda a tarde rola de algu√©m ir no mercado comprar uns refrigerantes, mas todo dia era uma "briga" para ver quem ia. Para resolver isso, criamos p√°gina simples em PHP que sorteava quem naquele dia ia fazer as compras.
 
-Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para us·-la, e ent„o o "Joel":http://twitter.com/paverama deu a idÈia, fazer aquela "p·gininha" em "Python":http://www.python.org/ e disponibilizar no "Google App Engine":http://appengine.google.com/.
+Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para us√°-la, e ent√£o o "Joel":http://twitter.com/paverama deu a id√©ia, fazer aquela "p√°gininha" em "Python":http://www.python.org/ e disponibilizar no "Google App Engine":http://appengine.google.com/.
 
 http://eoescolhidofoi.appspot.com/
 
-… simplesmente fant·stica a facilidade de se criar uma aplicaÁ„o e fazer o deploy dela no "Google App Engine":http://appengine.google.com/, o fato de n„o ter que se preocupar com banco de dados influencia bastante, basta definir modelos no prÛprio cÛdigo, pensar apenas em objetos.
+√â simplesmente fant√°stica a facilidade de se criar uma aplica√ß√£o e fazer o deploy dela no "Google App Engine":http://appengine.google.com/, o fato de n√£o ter que se preocupar com banco de dados influencia bastante, basta definir modelos no pr√≥prio c√≥digo, pensar apenas em objetos.
 
-Depois dessa primeira eu j· criei mais duas, uma est· pronta, mas estou testando ainda, a outra est· a caminho, mas ser· para a empresa que trabalho.
+Depois dessa primeira eu j√° criei mais duas, uma est√° pronta, mas estou testando ainda, a outra est√° a caminho, mas ser√° para a empresa que trabalho.

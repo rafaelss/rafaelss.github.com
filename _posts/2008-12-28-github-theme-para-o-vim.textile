@@ -6,8 +6,8 @@ wordpress_url: http://stagging.rafaelss.com/?p=22
 ---
 Depois de uma busca insana por um editor de texto acabei escolhendo o "Vim":http://www.vim.org/, estou usando ele direto faz uma semana e estou me adaptando bem, apesar de algumas coisas me deixarem meio perdido (teclas de atalho principalmente).
 
-Eu estava usando o "Vim":http://www.vim.org/ no console, com um tema com fundo escuro, e como estou usando o computador em um lugar muito claro, o reflexo que a minha tela emite fazia com que eu forÁasse muito a vis„o para enxergar o cÛdigo. Foi ent„o que eu achei "isto":http://blog.menfin.info/post/2008/05/30/Github-theme-for-Vim, um tema usando as cores do Github, instalei e ficou muito bom!
+Eu estava usando o "Vim":http://www.vim.org/ no console, com um tema com fundo escuro, e como estou usando o computador em um lugar muito claro, o reflexo que a minha tela emite fazia com que eu for√ßasse muito a vis√£o para enxergar o c√≥digo. Foi ent√£o que eu achei "isto":http://blog.menfin.info/post/2008/05/30/Github-theme-for-Vim, um tema usando as cores do Github, instalei e ficou muito bom!
 
-Um detalhe apenas È que a cor do fundo n„o È a mesma, nos coment·rios o "Felipe Contreras":http://felipec.wordpress.com/ d· a cor certa. Como n„o achei nenhum fork com a correÁ„o, eu mesmo "o fiz":http://github.com/rafaelss/github_vim_theme/tree/master.
+Um detalhe apenas √© que a cor do fundo n√£o √© a mesma, nos coment√°rios o "Felipe Contreras":http://felipec.wordpress.com/ d√° a cor certa. Como n√£o achei nenhum fork com a corre√ß√£o, eu mesmo "o fiz":http://github.com/rafaelss/github_vim_theme/tree/master.
 
-Se vocÍ achar que alguma outra cor n„o est· correta, vocÍ sabe, "fork":http://github.com/guides/fork-a-project-and-submit-your-modifications e "pull request":http://github.com/guides/pull-requests :)
+Se voc√™ achar que alguma outra cor n√£o est√° correta, voc√™ sabe, "fork":http://github.com/guides/fork-a-project-and-submit-your-modifications e "pull request":http://github.com/guides/pull-requests :)
