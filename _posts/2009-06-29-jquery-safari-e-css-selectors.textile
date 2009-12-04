@@ -15,7 +15,7 @@ $("#meuform input[type='hidden'][value='']").length
 No Safari sempre me retornava 0, já no Firefox e Internet Explorer, retorna 1, que era para ser o valor certo no caso. Analisando como o input estava definido eu descobri o problema, ele estava definido assim:
 
 {% highlight html %}
-&lt;input type="hidden" name="first_user" /&gt;
+<input type="hidden" name="first_user" />
 {% endhighlight %}
 
 Resumindo:
