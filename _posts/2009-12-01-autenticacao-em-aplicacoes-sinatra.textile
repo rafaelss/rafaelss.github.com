@@ -1,0 +1,28 @@
+---
+layout: post
+title: Autenticação em aplicações Sinatra
+--
+
+* Instalação
+
+$ sudo gem install sinatra_warden
+Successfully installed warden-0.5.3
+Successfully installed sinatra_warden-0.1.4
+2 gems installed
+
+* Registrando helpers
+
+register Sinatra::Warden
+
+* Configurando
+
+set :auth_failure_path, '/login'
+
+* Autenticando
+
+authorize!
+authorize!('/login')
+
+* Verificando se o usuário está logado
+
+authenticated?

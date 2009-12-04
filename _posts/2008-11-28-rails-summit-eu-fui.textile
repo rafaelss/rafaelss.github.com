@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Rails Summit, eu fui!
+wordpress_id: 31
+wordpress_url: http://stagging.rafaelss.com/?p=31
+---
+Eu sei, eu sei, "Rails Summit":http://locaweb.com.br/railssummit/ já foi faz tempo, mas só agora consegui postar alguma coisa aqui no blog.
+
+O evento estava muito bom, muito motivador, palestras como a do "Obie Fernandez":http://obiefernandez.com/, do "Vinícius Teles":http://www.improveit.com.br/empresa/vinicius e do "Chad Fowler":http://chadfowler.com/ me fizeram mudar alguns aspectos na minha vida profissional (motivo pelo qual esse blog ficou um pouco abandonado), estou focando mais em desenvolver alguma coisa do que simplesmente assistir a tudo de braços cruzados. Gmail só o essencial e Google Reader e "Twitter":http://twitter.com/rafaelss são raramente abertos em casa.
+
+No momento networking do evento, reencontrei o "Jony":http://jonysk.net/blog/ e o "Tailor":http://www.tailorfontela.com.br/, que tinha conhecido no FISL, e conheci mais uma galera legal lá, citando alguns: "Júlio Monteiro":http://www.monteiro.eti.br/, "Henry Hamon":http://twitter.com/henryhamon, Evandro Dutra, "Rafael Lima":http://www.rafael.adm.br/, "Henrique Bastos":http://henriquebastos.net/, "Thiago Pradi":http://thiagopradi.net/blog/, "Davis Cabral":http://www.daviscabral.com.br/ e mais alguns outros que não me lembro o nome.
+
+Enfim, espero que o ano que vem tenhamos outro evento neste mesmo nível (ou até melhor), que com certeza eu estarei lá.

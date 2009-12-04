@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: "Permiss\xE3o para o Apache na pasta home"
+wordpress_id: 45
+wordpress_url: http://rafaelss.com/?p=45
+---
+Muitas vezes quando configuramos um servidor para hospedar sites para diferentes usuários, a primeira coisa que pensamos é em colocar os sites de cada usuário na pasta home do mesmo, mas para isso funcionar corretamente precisamos dar permissão para o Apache ler a home de cada usuário.
+A solução que tenho usado é dar a seguinte permissão na pasta do usuário
+
+{% highlight shell %}
+chmod a+x /home/nome_do_usuario/  
+{% endhighlight %}
+
+Depois disso todos os "forbidden" desaparecem :)

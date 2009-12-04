@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: Usando uma única instância do Vim
+wordpress_id: 8
+wordpress_url: http://stagging.rafaelss.com/?p=8
+---
+Hoje quando li o feed de comentários do "blog do TaQ":http://eustaquiorangel.com/ (re)apareceu "uma dica":http://eustaquiorangel.com/posts/477 que ele deu há um bom tempo, sobre usar uma única instância do Vim para editar arquivos, acho muito chato ter que abrir muitos editores.
+
+Porém a dica que ele deu não funcionou para mim, apenas "esta":http://eustaquiorangel.com/posts/477#comentario_587 dos comentários, que ao invés de usar um alias, usa uma função.
+
+{% highlight shell %}
+# http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/
+function edit() {
+    gvim --servername `gvim --serverlist | head -1` --remote-tab "$@";
+}
+{% endhighlight %}
+
+Eu mudei o nome para @edit@, acho mais fácil, mas fica a critério de cada um :)
+
+Link do codigo original: http://pastebin.com/f7a69dcd7

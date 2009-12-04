@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: Nome da distro Linux usada
+wordpress_id: 5
+wordpress_url: http://stagging.rafaelss.com/?p=5
+---
+Uma coisa que eu sempre precisava e nunca me lembrava como fazer era descobrir qual a distro que eu estava usando no momento, como muitas vezes precisei mexer com os mais variados servidores, algumas vezes precisava dessa informação, e hoje achei o jeito mais fácil de fazer isso
+
+{% highlight shell %}
+cat /etc/issue
+{% endhighlight %}
+
+No meu micro aparece
+
+{% highlight text %}
+Arch Linux \r  (\n) (\l)
+{% endhighlight %}
+
+No do meu colega
+
+{% highlight text %}
+Ubuntu 8.10 \n \l
+{% endhighlight %}
+
+Achei essa dica "aqui":http://drlinux.wordpress.com/2007/09/15/como-descobrir-a-distribuicao-linux-que-estamos-usando/ e estou documentando aqui pra não esquecer mais :)

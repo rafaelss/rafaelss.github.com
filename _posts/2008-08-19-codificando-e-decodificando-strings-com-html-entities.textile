@@ -1,0 +1,33 @@
+--- 
+layout: post
+title: Codificando e decodificando strings com HTML Entities
+wordpress_id: 46
+wordpress_url: http://rafaelss.com/?p=46
+---
+"HTML Entities":http://htmlentities.rubyforge.org/ é uma gem para "Ruby":http://www.ruby-lang.org/ que serve para codificar e decodificar html entities.
+
+{% highlight shell %}
+sudo gem install htmlentities
+{% endhighlight %}
+
+Para *codificar* uma string usamos
+
+{% highlight ruby %}
+require 'rubygems'
+require 'htmlentities'
+
+he = HTMLEntities.new
+encoded = he.encode("essa gem é uma mão na roda!", :named)
+puts encoded # essa gem &eacute; uma m&atilde;o na roda!
+{% endhighlight %}
+
+e para *decodificar*
+
+{% highlight ruby %}
+require 'rubygems'
+require 'htmlentities'
+
+he = HTMLEntities.new
+decoded = he.decode("essa gem &eacute; uma m&atilde;o na roda!")
+puts decoded # essa gem é uma mão na roda!
+{% endhighlight %}
