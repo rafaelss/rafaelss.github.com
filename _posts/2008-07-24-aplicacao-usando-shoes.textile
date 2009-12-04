@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "Aplicação usando Shoes"
+title: Aplicação usando Shoes
 wordpress_id: 41
 wordpress_url: http://rafaelss.com/?p=41
 ---

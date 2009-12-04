@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "Permiss\xE3o para o Apache na pasta home"
+title: Permissão para o Apache na pasta home
 wordpress_id: 45
 wordpress_url: http://rafaelss.com/?p=45
 ---

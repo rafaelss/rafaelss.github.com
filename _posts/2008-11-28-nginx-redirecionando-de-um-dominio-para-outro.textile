@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "nginx: Redirecionando de um domínio para outro"
+title: nginx: Redirecionando de um domínio para outro
 wordpress_id: 28
 wordpress_url: http://stagging.rafaelss.com/?p=28
 ---

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "PDO: bindParam ou bindValue?"
+title: PDO: bindParam ou bindValue?
 wordpress_id: 39
 wordpress_url: http://rafaelss.com/?p=39
 ---
