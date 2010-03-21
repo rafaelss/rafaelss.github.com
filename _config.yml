@@ -1,3 +1,6 @@
 layout: default
 title: Rafael Souza
+lsi: true
+server_port: 3000
 pygments: true
+paginate: 10
