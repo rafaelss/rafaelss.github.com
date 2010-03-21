@@ -1,0 +1,19 @@
+---
+layout: post
+title: "shoes-translator atualizado Ruby, Shoes e Google Translate API"
+---
+<p><a href="/2008/07/24/aplicacao-usando-shoes.html">Há tempos atrás</a> desenvolvi uma pequena aplicação usando <a href="http://github.com/shoes/shoes">Shoes</a>, e ontem resolvi atualizá-la, mudei um pouco a aparência e melhorei o suporte a pronúncia.</p>
+
+
+	<p>Caso tenha interesse em usar, você pode baixar o projeto do github: <a href="http://github.com/rafaelss/shoes-translator">http://github.com/rafaelss/shoes-translator</a></p>
+
+
+	<p>Falando um pouco agora sobre o <a href="http://github.com/shoes/shoes">Shoes</a>, me parece que após o sumiço do <a href="http://www.rubyinside.com.br/%E2%80%9Cwhy-the-lucky-stiff%E2%80%9D-desapareceu-32-links-sobre-ele-1997">_why</a>
+a coisas não vão tão bem, o projeto amadureceu muito pouco, muita coisa básica ainda é complicado de se fazer,
+impedindo um pouco que aplicações mais profissionais sejam feitas rodando sobre o framework.</p>
+
+
+	<p>Quando desenvolvi o shoes-translator na primeira vez, eu levava mais fé no projeto, acreditava que seria um concorrente de peso para os toolkits atuais, mas agora, voltando a mexer na código e buscando referências na internet para fazer as alterações, percebi que o Shoes ainda precisa de muito, mas muito trabalho para poder ter crédito suficiente e ser usado para fazer software de verdade.</p>
+
+
+	<p><b><span class="caps">UPDATE</span></b>: O <a href="http://twitter.com/kbmurata">@kbmurata</a> postou no twitter que o objetivo do Shoes é ser usado para o aprendizado de forma divertida, de qualquer forma, se você quiser começar um projeto usando Shoes, pense bem que tipo de projeto você está desenvolvendo, não pense em nada muito maior que um &#8220;<a href="http://twitter.com/krsmurata/status/7879665068">tradutor de sapatos</a>&#8220;</p>
