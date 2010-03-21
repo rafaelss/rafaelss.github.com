@@ -11,6 +11,7 @@ p {margin:1em 0px;}
 #container #posts .post ul {margin-left:20px;}
 #container #posts h2.post {font-size:1.3em;}
 #container #posts .post h2, .shadow {text-shadow:1px 1px 2px #777777;}
+#container #posts .post h2 {color:#000000;}
 div.hr {border-top:1px solid #AAAAAA;}
 div.hr hr {display:none;}
 ul#links {padding:10px 6px;}
