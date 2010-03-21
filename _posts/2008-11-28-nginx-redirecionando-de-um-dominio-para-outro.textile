@@ -4,18 +4,22 @@ title: "nginx: Redirecionando de um domínio para outro"
 wordpress_id: 28
 wordpress_url: http://stagging.rafaelss.com/?p=28
 ---
-Semana passada eu resolvi mudar o domínio do blog, usar algo mais pessoal, e acabei escolhendo http://rafaelss.com, mais simples, mais curto, tem meu nome, enfim, muito melhor :)
+<p>Semana passada eu resolvi mudar o domínio do blog, usar algo mais pessoal, e acabei escolhendo http://rafaelss.com, mais simples, mais curto, tem meu nome, enfim, muito melhor :)</p>
 
-Mas com isso veio a necessidade de redirecionar do domínio antigo, http://www.joeh.com.br, para o novo.
 
-Isso é muito fácil.
+	<p>Mas com isso veio a necessidade de redirecionar do domínio antigo, http://www.joeh.com.br, para o novo.</p>
 
-{% highlight conf %}
+
+	<p>Isso é muito fácil.</p>
+
+
+	<p>{% highlight conf %}
 server {
     listen 80;
-    server_name joeh.com.br  *.joeh.com.br;
-    rewrite ^/(.*) http://rafaelss.com/$1 permanent;
+    server_name joeh.com.br  <strong>.joeh.com.br;
+    rewrite ^/(.</strong>) http://rafaelss.com/$1 permanent;
 }
-{% endhighlight %}
+{% endhighlight %}</p>
 
-Com isso todos os links que apontam para o domínio velho são redirecionados para o novo, com o _permanent_ ali as buscas se entendem, a indexação não é afetada, e tudo continua funcionando normalmente como era antes.
+
+	<p>Com isso todos os links que apontam para o domínio velho são redirecionados para o novo, com o <em>permanent</em> ali as buscas se entendem, a indexação não é afetada, e tudo continua funcionando normalmente como era antes.</p>

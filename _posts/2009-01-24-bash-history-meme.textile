@@ -4,10 +4,11 @@ title: bash history meme
 wordpress_id: 20
 wordpress_url: http://stagging.rafaelss.com/?p=20
 ---
-Vi no blog do "Luiz Rocha":http://lsdr.net/blog/ hoje "um meme":http://lsdr.net/blog/2009/01/14/bash-history-meme/ que rolou há um bom tempo atrás e resolvi fazer também.
+<p>Vi no blog do <a href="http://lsdr.net/blog/">Luiz Rocha</a> hoje <a href="http://lsdr.net/blog/2009/01/14/bash-history-meme/">um meme</a> que rolou há um bom tempo atrás e resolvi fazer também.</p>
 
-{% highlight shell %}
-[rafael ~]$ history 1000 | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+
+	<p>{% highlight shell %}
+ history 1000 | awk &#8216;{a[$2]++}END{for(i in a){print a[i] &#8221; &#8221; i}}&#8217; | sort -rn | head
 156 git
 101 sudo
 86 cd
@@ -18,6 +19,7 @@ Vi no blog do "Luiz Rocha":http://lsdr.net/blog/ hoje "um meme":http://lsdr.net/
 39 braid
 36 ll
 33 rake
-{% endhighlight %}
+{% endhighlight %}</p>
 
-Minha única surpresa foi o braid, considerando que conheci ele faz uma semana e que só utilizo ele em um projeto.
+
+	<p>Minha única surpresa foi o braid, considerando que conheci ele faz uma semana e que só utilizo ele em um projeto.</p>

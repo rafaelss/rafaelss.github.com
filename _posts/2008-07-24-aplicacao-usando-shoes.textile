@@ -1,43 +1,45 @@
 --- 
 layout: post
-title: Aplicação usando Shoes
+title: "Aplicação usando Shoes"
 wordpress_id: 41
 wordpress_url: http://rafaelss.com/?p=41
 ---
-Criei ontem de noite um aplicação de teste para traduzir palavras/frases usando "Ruby":http://www.ruby-lang.org/, "Shoes":http://code.whytheluckystiff.net/shoes/ e "Google AJAX Language API":http://code.google.com/apis/ajaxlanguage/, ela é bem simples, não tem nada que não foi feito por aí, mas futuramente vou colocar a opção de salvar outras palavras/frases em um banco de dados local, usando SQLite provavelmente, já que estou reforçando meus estudos em inglês, acho que isto vai me ajudar bastante ;)
+<p>
+  Criei ontem de noite um aplicação de teste para traduzir palavras/frases usando <a href="http://www.ruby-lang.org/">Ruby</a>,
+  <a href="http://code.whytheluckystiff.net/shoes/">Shoes</a> e <a href="http://code.google.com/apis/ajaxlanguage/">Google <span class="caps">AJAX</span> Language <span class="caps">API</span></a>, ela é bem simples, não tem nada que não foi feito por aí, mas futuramente vou colocar a opção de salvar outras palavras/frases em um banco de dados local, usando SQLite provavelmente, já que estou reforçando meus estudos em inglês, acho que isto vai me ajudar bastante ;)
+</p>
+<p>
+  Mas nem tudo são flores nessa vida de programador, passei um trabalhinho para poder rodar o Shoes com as gems que eu usei, ele não funciona com gems instaladas usando <code>gem install</code>, por que ele tem uma espécie de "interpretador" próprio ou coisa parecida. Depois de instalar o Shoes tive que colocar as gems (json, rest-client) e a lib rexml dentro da <em>Shoes-land</em> - <a href="http://www.nabble.com/Shoes-require-td14568664.html#a14569377">como vi uns chamando por ai</a>.
+</p>
+<p>Fiz um passo a passo de como rodar. Isso também serve para outras apps feitas usando <em>Shoes</em> que você queira rodar, não apenas para este projeto.</p>
+<p>Copie as gems/libs - verifique antes se os diretórios são os mesmos</p>
+<p>json - usei json_pure por que a outra é nativa, então não sei se funcionaria</p>
 
-Mas nem tudo são flores nessa vida de programador, passei um trabalhinho para poder rodar o Shoes com as gems que eu usei, ele não funciona com gems instaladas usando @gem install@, por que ele tem uma espécie de "interpretador" próprio ou coisa parecida. Depois de instalar o Shoes tive que colocar as gems (json, rest-client) e a lib rexml dentro da _Shoes-land_ - "como vi uns chamando por ai":http://www.nabble.com/Shoes-require-td14568664.html#a14569377.
-
-Fiz um passo a passo de como rodar. Isso também serve para outras apps feitas usando _Shoes_ que você queira rodar, não apenas para este projeto.
-
-Copie as gems/libs - verifique antes se os diretórios são os mesmos
-
-json - usei json_pure por que a outra é nativa, então não sei se funcionaria
-{% highlight shell %}
+{% highlight sh %}
 sudo cp -R /usr/lib/ruby/gems/1.8/gems/json_pure-1.1.2/lib/json* /usr/local/lib/shoes/ruby/lib/
 {% endhighlight %}
 
-rest-client
+<p>rest-client</p>
 
 {% highlight shell %}
 sudo cp /usr/lib/ruby/gems/1.8/gems/rest-client-0.5.1/lib/* /usr/local/lib/shoes/ruby/lib/
 {% endhighlight %}
 
-rexml
+<p>rexml</p>
 
-{% highlight shell %}
+{% highlight sh %}
 sudo cp -R /usr/lib/ruby/1.8/rexml /usr/local/lib/shoes/ruby/lib/
 {% endhighlight %}
 
-Feito isso, clone o projeto
+<p>Feito isso, clone o projeto</p>
 
-{% highlight shell %}
+{% highlight sh %}
 git clone git://github.com/rafaelss/shoes-translator.git
 {% endhighlight %}
 
-e quando terminar execute
+<p>e quando terminar execute</p>
 
-{% highlight shell %}
+{% highlight sh %}
 cd shoes-translator
 shoes translator.rb
 {% endhighlight %}

@@ -4,14 +4,19 @@ title: Usando Python e Google App Engine
 wordpress_id: 26
 wordpress_url: http://stagging.rafaelss.com/?p=26
 ---
-No começo do mês recebi a liberação para usar o "Google App Engine":http://appengine.google.com/, foi o que faltava para eu dar uma brincada com Python.
+<p>No começo do mês recebi a liberação para usar o <a href="http://appengine.google.com/">Google App Engine</a>, foi o que faltava para eu dar uma brincada com Python.</p>
 
-Onde trabalho, toda a tarde rola de alguém ir no mercado comprar uns refrigerantes, mas todo dia era uma "briga" para ver quem ia. Para resolver isso, criamos página simples em PHP que sorteava quem naquele dia ia fazer as compras.
 
-Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para usá-la, e então o "Joel":http://twitter.com/paverama deu a idéia, fazer aquela "págininha" em "Python":http://www.python.org/ e disponibilizar no "Google App Engine":http://appengine.google.com/.
+	<p>Onde trabalho, toda a tarde rola de alguém ir no mercado comprar uns refrigerantes, mas todo dia era uma &#8220;briga&#8221; para ver quem ia. Para resolver isso, criamos página simples em <span class="caps">PHP</span> que sorteava quem naquele dia ia fazer as compras.</p>
 
-http://eoescolhidofoi.appspot.com/
 
-É simplesmente fantástica a facilidade de se criar uma aplicação e fazer o deploy dela no "Google App Engine":http://appengine.google.com/, o fato de não ter que se preocupar com banco de dados influencia bastante, basta definir modelos no próprio código, pensar apenas em objetos.
+	<p>Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para usá-la, e então o <a href="http://twitter.com/paverama">Joel</a> deu a idéia, fazer aquela &#8220;págininha&#8221; em <a href="http://www.python.org/">Python</a> e disponibilizar no <a href="http://appengine.google.com/">Google App Engine</a>.</p>
 
-Depois dessa primeira eu já criei mais duas, uma está pronta, mas estou testando ainda, a outra está a caminho, mas será para a empresa que trabalho.
+
+	<p>http://eoescolhidofoi.appspot.com/</p>
+
+
+	<p>É simplesmente fantástica a facilidade de se criar uma aplicação e fazer o deploy dela no <a href="http://appengine.google.com/">Google App Engine</a>, o fato de não ter que se preocupar com banco de dados influencia bastante, basta definir modelos no próprio código, pensar apenas em objetos.</p>
+
+
+	<p>Depois dessa primeira eu já criei mais duas, uma está pronta, mas estou testando ainda, a outra está a caminho, mas será para a empresa que trabalho.</p>
