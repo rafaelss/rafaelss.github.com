@@ -11,7 +11,7 @@ wordpress_url: http://rafaelss.com/?p=45
   A solução que tenho usado é dar a seguinte permissão na pasta do usuário
 </p>
 
-{% highlight shell %}
+{% highlight sh %}
 chmod a+x /home/nome_do_usuario/  
 {% endhighlight %}
 

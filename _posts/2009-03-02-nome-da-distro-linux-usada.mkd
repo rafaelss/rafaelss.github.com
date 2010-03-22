@@ -10,7 +10,7 @@ wordpress_url: http://stagging.rafaelss.com/?p=5
   vezes precisava dessa informação, e hoje achei o jeito mais fácil de fazer isso
 </p>
 
-{% highlight shell %}
+{% highlight sh %}
 cat /etc/issue
 {% endhighlight %}
 

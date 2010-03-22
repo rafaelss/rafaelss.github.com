@@ -21,7 +21,7 @@ sudo cp -R /usr/lib/ruby/gems/1.8/gems/json_pure-1.1.2/lib/json* /usr/local/lib/
 
 <p>rest-client</p>
 
-{% highlight shell %}
+{% highlight sh %}
 sudo cp /usr/lib/ruby/gems/1.8/gems/rest-client-0.5.1/lib/* /usr/local/lib/shoes/ruby/lib/
 {% endhighlight %}
 
