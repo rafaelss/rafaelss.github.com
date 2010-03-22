@@ -1,33 +1,40 @@
 --- 
 layout: post
-title: C# e códigos deprecated
+title: "C# e códigos deprecated"
 wordpress_id: 73
 wordpress_url: http://rafaelss.com/?p=73
 ---
-<p>Você desenvolve uma biblioteca de utilitários para facilitar a vida dos outros desenvolvedores da empresa, porém algumas vezes é necessário refatorar códigos, criando/renomeando/apagando alguns métodos.
-Obviamente você não pode sair mudando tudo, existe código &#8220;antigo&#8221; usando a sua &#8220;lib&#8221;.</p>
+<p>
+  Você desenvolve uma biblioteca de utilitários para facilitar a vida dos outros desenvolvedores da empresa,
+  porém algumas vezes é necessário refatorar códigos, criando/renomeando/apagando alguns métodos.
+  Obviamente você não pode sair mudando tudo, existe código "antigo" usando a sua "lib".
+</p>
 
+<p>
+  Existe um atributo no C# que permite que você marque código como deprecated,
+  é o <code>Obsolete</code>, muito útil e fácil de usar.
+</p>
 
-	<p>Existe um atributo no C# que permite que você marque código como deprecated, é o <code>Obsolete</code>, muito útil e fácil de usar.</p>
-
-
-	<p>{% highlight c# %}
-[Obsolete(&#8220;Use o método MinhaClasse.MeuMetodo(int parametro)&#8221;)]
+{% highlight c# %}
+[Obsolete("Use o método MinhaClasse.MeuMetodo(int parametro)")]
 public static void MeuMetodo(string parametro) {
     // ...
 }
-{% endhighlight %}</p>
+{% endhighlight %}
 
+<p>
+  No exemplo acima quero que os desenvolvedores usem a versão que recebe um <code>integer</code> como parâmetro,
+  e não mais a versão com <code>string</code>.
+</p>
 
-	<p>No exemplo acima quero que os desenvolvedores usem a versão que recebe um <code>integer</code> como parâmetro, e não mais a versão com <code>string</code>.</p>
+<p>
+  Você ainda pode dizer que é para o compilador gerar um erro ao compilar o código,
+  passando <code>true</code> como segundo parâmetro do atributo.
+</p>
 
-
-	<p>Você ainda pode dizer que é para o compilador gerar um erro ao compilar o código, passando <code>true</code> como segundo parâmetro do atributo.</p>
-
-
-	<p>{% highlight c# %}
-[Obsolete(&#8220;Este método não deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)&#8221;, true)]
+{% highlight c# %}
+[Obsolete("Este método não deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)", true)]
 public static void MeuMetodo(string parametro) {
     // ...
 }  
-{% endhighlight %}</p>
+{% endhighlight %}

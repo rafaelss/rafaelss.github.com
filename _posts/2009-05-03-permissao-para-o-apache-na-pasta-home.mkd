@@ -1,16 +1,18 @@
 --- 
 layout: post
-title: Permissão para o Apache na pasta home
+title: "Permissão para o Apache na pasta home"
 wordpress_id: 45
 wordpress_url: http://rafaelss.com/?p=45
 ---
-<p>Muitas vezes quando configuramos um servidor para hospedar sites para diferentes usuários, a primeira coisa que pensamos é em colocar os sites de cada usuário na pasta home do mesmo, mas para isso funcionar corretamente precisamos dar permissão para o Apache ler a home de cada usuário.
-A solução que tenho usado é dar a seguinte permissão na pasta do usuário</p>
+<p>
+  Muitas vezes quando configuramos um servidor para hospedar sites para diferentes usuários,
+  a primeira coisa que pensamos é em colocar os sites de cada usuário na pasta home do mesmo,
+  mas para isso funcionar corretamente precisamos dar permissão para o Apache ler a home de cada usuário.
+  A solução que tenho usado é dar a seguinte permissão na pasta do usuário
+</p>
 
-
-	<p>{% highlight shell %}
+{% highlight shell %}
 chmod a+x /home/nome_do_usuario/  
-{% endhighlight %}</p>
+{% endhighlight %}
 
-
-	<p>Depois disso todos os &#8220;forbidden&#8221; desaparecem :)</p>
+<p>Depois disso todos os "forbidden" desaparecem :)</p>

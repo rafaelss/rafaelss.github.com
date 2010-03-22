@@ -1,22 +1,35 @@
 --- 
 layout: post
-title: Usando Python e Google App Engine
+title: "Usando Python e Google App Engine"
 wordpress_id: 26
 wordpress_url: http://stagging.rafaelss.com/?p=26
 ---
-<p>No começo do mês recebi a liberação para usar o <a href="http://appengine.google.com/">Google App Engine</a>, foi o que faltava para eu dar uma brincada com Python.</p>
+<p>
+  No começo do mês recebi a liberação para usar o <a href="http://appengine.google.com/">Google App Engine</a>,
+  foi o que faltava para eu dar uma brincada com Python.
+</p>
 
+<p>
+  Onde trabalho, toda a tarde rola de alguém ir no mercado comprar uns refrigerantes, mas todo dia era uma "briga"
+  para ver quem ia. Para resolver isso, criamos página simples em PHP que sorteava quem naquele dia ia fazer as compras.
+</p>
 
-	<p>Onde trabalho, toda a tarde rola de alguém ir no mercado comprar uns refrigerantes, mas todo dia era uma &#8220;briga&#8221; para ver quem ia. Para resolver isso, criamos página simples em <span class="caps">PHP</span> que sorteava quem naquele dia ia fazer as compras.</p>
+<p>
+  Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para usá-la,
+  e então o <a href="http://twitter.com/paverama">Joel</a> deu a idéia, fazer aquela "págininha"
+  em <a href="http://www.python.org/">Python</a> e disponibilizar no <a href="http://appengine.google.com/">Google App Engine</a>.
+</p>
 
+<p>http://eoescolhidofoi.appspot.com/</p>
 
-	<p>Depois que a minha conta foi liberada, fiquei um bom tempo pensando o que eu poderia fazer para usá-la, e então o <a href="http://twitter.com/paverama">Joel</a> deu a idéia, fazer aquela &#8220;págininha&#8221; em <a href="http://www.python.org/">Python</a> e disponibilizar no <a href="http://appengine.google.com/">Google App Engine</a>.</p>
+<p>
+  É simplesmente fantástica a facilidade de se criar uma aplicação e fazer o deploy dela
+  no <a href="http://appengine.google.com/">Google App Engine</a>, o fato de não ter que
+  se preocupar com banco de dados influencia bastante, basta definir modelos no próprio código,
+  pensar apenas em objetos.
+</p>
 
-
-	<p>http://eoescolhidofoi.appspot.com/</p>
-
-
-	<p>É simplesmente fantástica a facilidade de se criar uma aplicação e fazer o deploy dela no <a href="http://appengine.google.com/">Google App Engine</a>, o fato de não ter que se preocupar com banco de dados influencia bastante, basta definir modelos no próprio código, pensar apenas em objetos.</p>
-
-
-	<p>Depois dessa primeira eu já criei mais duas, uma está pronta, mas estou testando ainda, a outra está a caminho, mas será para a empresa que trabalho.</p>
+<p>
+  Depois dessa primeira eu já criei mais duas, uma está pronta, mas estou testando ainda,
+  a outra está a caminho, mas será para a empresa que trabalho.
+</p>

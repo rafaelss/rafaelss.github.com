@@ -1,26 +1,26 @@
 --- 
 layout: post
-title: Usando uma única instância do Vim
+title: "Usando uma única instância do Vim"
 wordpress_id: 8
 wordpress_url: http://stagging.rafaelss.com/?p=8
 ---
-<p>Hoje quando li o feed de comentários do <a href="http://eustaquiorangel.com/">blog do TaQ</a> (re)apareceu <a href="http://eustaquiorangel.com/posts/477">uma dica</a> que ele deu há um bom tempo, sobre usar uma única instância do Vim para editar arquivos, acho muito chato ter que abrir muitos editores.</p>
+<p>
+  Hoje quando li o feed de comentários do <a href="http://eustaquiorangel.com/">blog do TaQ</a>
+  (re)apareceu <a href="http://eustaquiorangel.com/posts/477">uma dica</a> que ele deu há um bom tempo,
+  sobre usar uma única instância do Vim para editar arquivos, acho muito chato ter que abrir muitos editores.
+</p>
 
+<p>
+  Porém a dica que ele deu não funcionou para mim, apenas <a href="http://eustaquiorangel.com/posts/477#comentario_587">esta</a>
+  dos comentários, que ao invés de usar um alias, usa uma função.
+</p>
 
-	<p>Porém a dica que ele deu não funcionou para mim, apenas <a href="http://eustaquiorangel.com/posts/477#comentario_587">esta</a> dos comentários, que ao invés de usar um alias, usa uma função.</p>
-
-
-{% highlight shell %}
-	<ol>
-	<li>http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/
+{% highlight sh %}
+# http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/
 function edit() {
-    gvim&#8212;servername `gvim&#8212;serverlist | head -1`&#8212;remote-tab &#8221;$@&#8221;;
+    gvim --servername `gvim --serverlist | head -1` --remote-tab "$@";
 }
-{% endhighlight %}</li>
-	</ol>
+{% endhighlight %}
 
-
-	<p>Eu mudei o nome para <code>edit</code>, acho mais fácil, mas fica a critério de cada um :)</p>
-
-
-	<p>Link do codigo original: http://pastebin.com/f7a69dcd7</p>
+<p>Eu mudei o nome para <code>edit</code>, acho mais fácil, mas fica a critério de cada um :)</p>
+<p>Link do codigo original: <a href="http://pastebin.com/f7a69dcd7">http://pastebin.com/f7a69dcd7</a></p>

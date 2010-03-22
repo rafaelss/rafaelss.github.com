@@ -1,29 +1,28 @@
 --- 
 layout: post
-title: Solução simples para um problema simples
+title: "Solução simples para um problema simples"
 wordpress_id: 34
 wordpress_url: http://stagging.rafaelss.com/?p=34
 ---
-<p>É impressionante como alguns desenvolvedores muitas vezes não procuram uma forma mais simples de fazer certas tarefas do dia-a-dia, um exemplo clássico: Deixar apenas números em uma string, nesse caso, o número de uma agência bancária.</p>
+<p>
+  É impressionante como alguns desenvolvedores muitas vezes não procuram uma forma mais simples de
+  fazer certas tarefas do dia-a-dia, um exemplo clássico: Deixar apenas números em uma string,
+  nesse caso, o número de uma agência bancária.
+</p>
 
+<p>Primeiro a forma que vejo normalmente (em C#)</p>
 
-	<p>Primeiro a forma que vejo normalmente (em C#)</p>
+{% highlight c# %}
+string agency = plan.Agency.Replace("-", "");
+agency = agency.Replace(".", "");
+agency = agency.Replace("/", "");
+agency = agency.Replace("", "");
+{% endhighlight %}
 
+<p>Forma simplificada (C# também)</p>
 
-	<p>{% highlight c# %}
-string agency = plan.Agency.Replace(&#8221;-&#8221;, &#8221;&#8221;);
-agency = agency.Replace(&#8221;.&#8221;, &#8221;&#8221;);
-agency = agency.Replace(&#8221;/&#8221;, &#8221;&#8221;);
-agency = agency.Replace(&#8221;&#8221;, &#8221;&#8221;);
-{% endhighlight %}</p>
+{% highlight c# %}
+Regex.Replace(plan.Agency, "[^0-9]+", "");
+{% endhighlight %}
 
-
-	<p>Forma simplificada (C# também)</p>
-
-
-	<p>{% highlight c# %}
-Regex.Replace(plan.Agency, &#8220;[^0-9]+&#8221;, &#8221;&#8221;)
-{% endhighlight %}</p>
-
-
-	<p>Não é muito mais simples? Basta procurar! ;)</p>
+<p>Não é muito mais simples? Basta procurar! ;)</p>

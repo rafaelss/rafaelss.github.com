@@ -1,8 +1,12 @@
 --- 
 layout: post
-title: PHP e SQL Server 2005
+title: "PHP e SQL Server 2005"
 wordpress_id: 12
 wordpress_url: http://stagging.rafaelss.com/?p=12
 ---
-<p>Se você tem <strong>problemas de conexão com <span class="caps">SQL</span> Server 2005</strong> pelo <strong><span class="caps">PHP</span></strong>, tente usar <a href="/assets/ntwdblib.zip">essa versão (2000.80.194.0) da ntwdblib</a>.
-Coloque esse arquivo na raiz da instalação do seu <a href="http://www.php.net"><span class="caps">PHP</span></a>, substituindo a versão existente, e reinicie o servidor web.</p>
+<p>
+  Se você tem <strong>problemas de conexão com SQL Server 2005</strong> pelo <strong>PHP</strong>,
+  tente usar <a href="/assets/ntwdblib.zip">essa versão (2000.80.194.0) da ntwdblib</a>.
+  Coloque esse arquivo na raiz da instalação do seu <a href="http://www.php.net">PHP</a>,
+  substituindo a versão existente, e reinicie o servidor web.
+</p>
