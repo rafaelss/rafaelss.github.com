@@ -19,6 +19,8 @@ title: "Tradutor simples Inglês/Português e Português/Inglês"
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 {% endhighlight %}
 
+<p>e depois</p>
+
 {% highlight js %}
 google.load("language", "1");
 
