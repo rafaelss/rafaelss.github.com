@@ -1,0 +1,111 @@
+---
+layout: nil
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Tradutor Inglês/Português e Português/Inglês</title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <style type="text/css" media="screen">
+      * {font-family:'Lucida Grande';margin:0px;padding:0px;}
+      body {width:500px;margin:10px auto;}
+      form p {margin:15px 0px;display:block;}
+      label {display:block;margin:3px 0px;}
+      label span {font-size:11px;}
+      button {width:80px;font-size:14px;height:24px;}
+      textarea {font-size:14px;width:498px;}
+      em {font-size:12px;}
+      address {margin-top:50px;font-size:11px;}
+      .result {background-color:lightblue;width:488px;padding:5px;display:block;}
+      p span a.translate_result {font-size:11px;bottom:2px;position:relative;}
+    </style>
+    <script type="text/javascript">
+      google.load("jquery", "1.4.2");
+      google.load("language", "1");
+
+      function translate(text, from, to) {
+        google.language.translate($("#from").val(), from, to, function(result1) {
+          $("#result1 span.result").html(result1.translation);
+          google.language.translate(result1.translation, to, from, function(result2) {
+            $("#result2 span.result").html(result2.translation);
+          });
+        });
+      }
+
+      function initialize() {
+        $("#translator_form").submit(function() {
+          var languages = $("input[name='languages']:checked").val().split('-');
+          translate($("#from").val(), languages[0], languages[1]);
+          return false;
+        });
+
+        $("input[name='languages']").change(function() {
+          var text1 = $("#result2 span:first span").html();
+          var text2 = $("#result1 span:first span").html();
+          $("#result1 span:first span").html(text1);
+          $("#result2 span:first span").html(text2);
+          var title1 = $("#result2 span:first a.translate_result").attr('title');
+          var title2 = $("#result1 span:first a.translate_result").attr('title');
+          $("#result1 span:first a.translate_result").attr('title', title1);
+          $("#result2 span:first a.translate_result").attr('title', title2);
+        })
+
+        $("span a.translate_result").click(function() {
+          if($("input[name='languages']:checked").val() != $(this).attr('title')) {
+            $("input[name='languages']:not(:checked)").attr('checked', 'checked').trigger('change');
+          }
+          $("#from").val($(this).parent().next().html());
+          $("#translator_form").trigger('submit');
+          return false;
+        });
+      }
+
+      google.setOnLoadCallback(initialize);
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3946012-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+      })();
+    </script>
+    <form action="/" method="post" id="translator_form">
+      <p>
+        <label for="from">De:
+          <span>
+            <input type="radio" value="en-pt" name="languages" checked="checked"/>&nbsp;Inglês-Português
+            <input type="radio" value="pt-en" name="languages"/>&nbsp;Português-Inglês
+          </span>
+        </label>
+        <textarea id="from" rows="4" cols="50"></textarea>
+      </p>
+      <p><button type="submit">Traduzir</button></p>
+      <p id="result1">
+        <span><span>Português</span> <a href="#" class="translate_result" title="pt-en">traduzir</a></span>
+        <span class="result"></span>
+      </p>
+      <p id="result2">
+        <span><span>Inglês</span> <a href="#" class="translate_result" title="en-pt">traduzir</a></span>
+        <span class="result"></span>
+      </p>
+    </form>
+    <em>
+      Caso alguma palavra/frase não seja traduzida corretamente,
+      verifique se ela está começando com letra minúscula.
+      O Google Translator se perde as vezes com esse tipo de frase, por exemplo:
+      Tente traduzir do para o Português a frase "Should I stay or should I go",
+      os resultados serão iguais. Agora tente mudar o primeiro "Should" para "should",
+      a frase será traduzida :)
+    </em>
+    <address>
+      by <a href="http://rafaelss.com/" title="Rafael Souza">Rafael Souza</a> |
+      Powered by <a href="http://code.google.com/apis/ajaxlanguage/documentation/#Translation">Google AJAX Language API</a>
+    </address>
+  </body>
+</html>

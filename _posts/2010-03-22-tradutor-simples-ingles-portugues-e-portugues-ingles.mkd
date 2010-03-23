@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Tradutor simples Inglês/Português e Português/Inglês"
+---
+<p>
+  Sempre usei os <a href="http://www.google.com/support/talk/bin/answer.py?hl=en&amp;answer=89921">bots do Google para o gtalk</a>,
+  mas percebi que os resultados que ele retorna são bem diferentes da <a href="http://translate.google.com/">página de tradução</a>.
+</p>
+<p>
+  Então fiz <a href="/tradutor.html">uma página bem simples</a> que usa a <a href="http://code.google.com/apis/ajaxlanguage/">Language API</a>
+  do Google para traduzir textos do Inglês para o Português e do Português para o Inglês,
+  sem todas aquelas opções de linguas que a página deles oferece.
+</p>
+<p>
+  Para você que tem interesse em saber como funciona traduzir textos com a
+  <a href="http://code.google.com/apis/ajaxlanguage/">Language API</a> do Google, veja como é fácil:
+</p>
+{% highlight html %}
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+{% endhighlight %}
+
+{% highlight js %}
+google.load("language", "1");
+
+google.language.translate("texto que eu quero traduzir", "pt", "en", function(result) {
+  // aqui você faz o que quiser com o resultado
+});
+{% endhighlight %}
