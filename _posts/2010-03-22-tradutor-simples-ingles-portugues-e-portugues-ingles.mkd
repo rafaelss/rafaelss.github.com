@@ -4,7 +4,7 @@ title: "Tradutor simples Inglês/Português e Português/Inglês"
 ---
 <p>
   Sempre usei os <a href="http://www.google.com/support/talk/bin/answer.py?hl=en&amp;answer=89921">bots do Google para o gtalk</a>,
-  mas percebi que os resultados que ele retorna são bem diferentes da <a href="http://translate.google.com/">página de tradução</a>.
+  mas percebi que os resultados que eles retornam são bem diferentes da <a href="http://translate.google.com/">página de tradução</a>.
 </p>
 <p>
   Então fiz <a href="/tradutor.html">uma página bem simples</a> que usa a <a href="http://code.google.com/apis/ajaxlanguage/">Language API</a>
