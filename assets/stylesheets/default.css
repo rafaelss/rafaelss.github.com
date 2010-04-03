@@ -1,23 +1,26 @@
 * {margin:0px;padding:0px;font-family:'Lucida Grande',Helvetica,Arial,sans-serif;}
-body {background-color:#333333;}
+/*body {background-color:#333333;}*/
 p {margin:1em 0px;}
-#container {width:900px;margin:5px auto;background-color:#FFFFFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;padding:10px 30px;-webkit-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;-moz-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;}
-#container #header {margin:30px 5px;}
-#container #header h1 a {font-size:40px;color:#000000;}
+/*#container {width:900px;margin:5px auto;background-color:#FFFFFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;padding:10px 30px;-webkit-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;-moz-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;}*/
+#container {width:900px;margin:5px auto;padding:10px 30px;}
+#container #header {margin:10px 5px;}
+#container #header h1 a {font-size:42px;color:#000000;}
 #container #posts {margin:0px 30px;}
+#container #posts h1 {font-weight:bold;}
 #container #posts h1, #container #posts h2 {margin:30px 0px 25px 0px;}
 #container #posts h2 a {color:#000000;}
 #container #posts .post {margin-bottom:20px;font-size:14px;color:#333333;}
 #container #posts .post ul {margin-left:20px;}
 #container #posts h2.post {font-size:1.3em;}
-#container #posts .post h2, .shadow {text-shadow:1px 1px 2px #777777;}
+#container #posts .post h2, .shadow {text-shadow:1px 1px 2px #DEDEDE;}
 #container #posts .post h2 {color:#000000;}
 div.hr {border-top:1px solid #AAAAAA;}
 div.hr hr {display:none;}
-ul#links {padding:10px 6px;}
-ul#links li {display:inline;margin-right:20px;}
-ul#links li a {position:relative;bottom:7px;}
+.wwr {float:right;margin-top:7px;}
+ul#links {padding:13px 6px}
+ul#links li {display:inline;margin-right:11px;}
+ul#links li a {position:relative;bottom:7px;font-size:14px;}
 a {color:#666666;}
 pre {margin:1em 0px;padding:5px;background-color:#EFEFEF;}
 code {font-family:'Monaco',monospace;font-size:14px;}
-address {margin:30px 0px 20px 0px;font-size:12px;}
+address {margin:20px 0px 20px 0px;font-size:12px;}
