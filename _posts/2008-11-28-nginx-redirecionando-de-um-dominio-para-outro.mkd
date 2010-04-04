@@ -13,7 +13,7 @@ wordpress_url: http://stagging.rafaelss.com/?p=28
 
 <p>Isso é muito fácil.</p>
 
-{% highlight conf %}
+{% highlight apacheconf %}
 server {
     listen 80;
     server_name joeh.com.br  *.joeh.com.br;
