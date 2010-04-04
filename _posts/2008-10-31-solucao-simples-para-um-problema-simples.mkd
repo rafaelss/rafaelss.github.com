@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "Solução simples para um problema simples"
-wordpress_id: 34
-wordpress_url: http://stagging.rafaelss.com/?p=34
 ---
 <p>
   É impressionante como alguns desenvolvedores muitas vezes não procuram uma forma mais simples de
@@ -12,17 +10,15 @@ wordpress_url: http://stagging.rafaelss.com/?p=34
 
 <p>Primeiro a forma que vejo normalmente (em C#)</p>
 
-{% highlight c# %}
-string agency = plan.Agency.Replace("-", "");
-agency = agency.Replace(".", "");
-agency = agency.Replace("/", "");
-agency = agency.Replace("", "");
-{% endhighlight %}
+<pre class="sunburst"><span class="Storage">string</span> agency = plan.Agency.Replace(<span class="String"><span class="String">&quot;</span>-<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>);
+agency = agency.Replace(<span class="String"><span class="String">&quot;</span>.<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>);
+agency = agency.Replace(<span class="String"><span class="String">&quot;</span>/<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>);
+agency = agency.Replace(<span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>);
+</pre>
 
 <p>Forma simplificada (C# também)</p>
 
-{% highlight c# %}
-Regex.Replace(plan.Agency, "[^0-9]+", "");
-{% endhighlight %}
+<pre class="sunburst">Regex.Replace(plan.Agency, <span class="String"><span class="String">&quot;</span>[^0-9]+<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span><span class="String">&quot;</span></span>);
+</pre>
 
 <p>Não é muito mais simples? Basta procurar! ;)</p>

@@ -1,4 +1,6 @@
 * {margin:0px;padding:0px;font-family:'Lucida Grande',Helvetica,Arial,sans-serif;}
+pre {padding:8px 10px 10px;}
+pre, pre * {font-family:monospace;}
 /*body {background-color:#333333;}*/
 p {margin:1em 0px;}
 /*#container {width:900px;margin:5px auto;background-color:#FFFFFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;padding:10px 30px;-webkit-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;-moz-box-shadow:rgba(0, 0, 0, 0.597656) 0px 1px 3px 1px;}*/
@@ -21,6 +23,6 @@ ul#links {padding:13px 6px}
 ul#links li {display:inline;margin-right:11px;}
 ul#links li a {position:relative;bottom:7px;font-size:14px;}
 a {color:#666666;}
-pre {margin:1em 0px;padding:5px;background-color:#EFEFEF;}
+/*pre {margin:1em 0px;padding:5px;background-color:#EFEFEF;}*/
 code {font-family:'Monaco',monospace;font-size:14px;}
 address {margin:20px 0px 20px 0px;font-size:12px;}

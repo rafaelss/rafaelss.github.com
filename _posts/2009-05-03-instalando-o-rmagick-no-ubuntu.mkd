@@ -1,28 +1,23 @@
 --- 
 layout: post
 title: "Instalando o RMagick no Ubuntu"
-wordpress_id: 68
-wordpress_url: http://rafaelss.com/?p=68
 ---
 <p>
   Se você estiver com problemas para instalar o RMagick no Ubuntu usando apt-get talvez essa solução
   possa ajudar. Primeiro, limpe os pacotes com "problemas":
 </p>
 
-{% highlight sh %}
-sudo apt-get remove --purge librmagick-ruby-doc librmagick-ruby1.8
-{% endhighlight %}
+<pre class="sunburst">sudo apt-get remove --purge librmagick-ruby-doc librmagick-ruby1.8
+</pre>
 
 <p>depois instale os seguintes pacotes:</p>
 
-{% highlight sh %}
-sudo apt-get install libmagick9-dev ruby1.8-dev
-{% endhighlight %}
+<pre class="sunburst">sudo apt-get install libmagick9-dev ruby1.8-dev
+</pre>
 
 <p>depois disso é só instalar a gem:</p>
 
-{% highlight sh %}
-sudo gem install rmagick
-{% endhighlight %}
+<pre class="sunburst">sudo gem install rmagick
+</pre>
 
 <p>dica retirada <a href="http://snippets.dzone.com/posts/show/4140">daqui</a></p>

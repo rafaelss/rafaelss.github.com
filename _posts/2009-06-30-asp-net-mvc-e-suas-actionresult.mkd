@@ -30,40 +30,35 @@ title: "ASP.NET MVC e suas ActionResult"
 
 <p>Porém, em alguns casos, retornar um texto simples, ou um JSON pequeninho, é meio chato. Considere o código abaixo:</p>
 
-{% highlight c# %}
-JsonResult json = new JsonResult();
-json.ContentType = "text/javascript";
-json.Data = new { success = true };
-return json;
-{% endhighlight %}
+<pre class="sunburst">JsonResult json = <span class="Keyword">new</span> JsonResult();
+json.ContentType = <span class="String"><span class="String">&quot;</span>text/javascript<span class="String">&quot;</span></span>;
+json.Data = <span class="Keyword">new</span> { success = <span class="Keyword">true</span> };
+<span class="Keyword">return</span> json;
+</pre>
 
 <p>Isso poderia ser mais simples não? Porém, a classe <code>JsonResult</code>, e nenhuma outra <code>ActionResult</code> aceita parâmetros no construtor. Por isso criei <a href="http://gist.github.com/138225">duas classes</a> que podem ser usadas como <code>ActionResult</code>, para simplificar essa tarefa. Elas devem ser usadas assim:</p>
 
-{% highlight c# %}
-return new SimpleResult("Hello World");
-return new SimpleResult(1);
-return new SimpleResult(1257.14);
-return new SimpleResult(true);
-{% endhighlight %}
+<pre class="sunburst"><span class="Keyword">return</span> <span class="Keyword">new</span> SimpleResult(<span class="String"><span class="String">&quot;</span>Hello World<span class="String">&quot;</span></span>);
+<span class="Keyword">return</span> <span class="Keyword">new</span> SimpleResult(<span class="Constant">1</span>);
+<span class="Keyword">return</span> <span class="Keyword">new</span> SimpleResult(<span class="Constant">1257.14</span>);
+<span class="Keyword">return</span> <span class="Keyword">new</span> SimpleResult(<span class="Keyword">true</span>);
+</pre>
 
 <p>e</p>
 
-{% highlight c# %}
-return new SimpleJsonResult(new { success = true });
-{% endhighlight %}
+<pre class="sunburst"><span class="Keyword">return</span> <span class="Keyword">new</span> SimpleJsonResult(<span class="Keyword">new</span> { success = <span class="Keyword">true</span> });
+</pre>
 
 <p>Pronto, agora é hora de refatorar código. :)</p>
 <p><strong>UPDATE:</strong> Conforme o Guilherme comentou ali embaixo, o ASP.NET MVC tem um método que já simplifica as coisas.</p>
 
-{% highlight c# %}
-return Json("Hello World");
-return Json(1);
-return Json(1257.14);
-return Json(true);
-{% endhighlight %}
+<pre class="sunburst"><span class="Keyword">return</span> Json(<span class="String"><span class="String">&quot;</span>Hello World<span class="String">&quot;</span></span>);
+<span class="Keyword">return</span> Json(<span class="Constant">1</span>);
+<span class="Keyword">return</span> Json(<span class="Constant">1257.14</span>);
+<span class="Keyword">return</span> Json(<span class="Keyword">true</span>);
+</pre>
 
 <p>e</p>
 
-{% highlight c# %}
-return Json(new { success = true });
-{% endhighlight %}
+<pre class="sunburst"><span class="Keyword">return</span> Json(<span class="Keyword">new</span> { success = <span class="Keyword">true</span> });
+</pre>

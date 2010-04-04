@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "PDO: bindParam ou bindValue?"
-wordpress_id: 39
-wordpress_url: http://rafaelss.com/?p=39
 ---
 <p>Programando hoje uma validação para o framework que estou desenvolvendo me deparei com um problema usando variáveis em <span class="caps">SQL</span>, mais especificamente usando variáveis com o <span class="caps">PDO</span>.</p>
 <p>Escrevendo os testes unitários para essas validações notei que precisava mudar a forma como passava os parâmetros para a <span class="caps">SQL</span>, ao invés de passar no <code>execute</code>, precisaria passar usando uma função própria para isso.</p>

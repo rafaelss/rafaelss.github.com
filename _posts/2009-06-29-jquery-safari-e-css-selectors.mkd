@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "jQuery, Safari e CSS Selectors"
-wordpress_id: 79
-wordpress_url: http://rafaelss.com/?p=79
 ---
 <p>
   Hoje estava verificando um bug em um projeto, que acontecia somente no Safari, tanto no MacOS, quanto no Windows,
@@ -10,18 +8,16 @@ wordpress_url: http://rafaelss.com/?p=79
 </p>
 <p>O expressão que eu estava usando era a seguinte:</p>
 
-{% highlight javascript %}
-$("#meuform input[type='hidden'][value='']").length
-{% endhighlight %}
+<pre class="sunburst"><span class="Support">$</span>(&quot;<span class="CssId"><span class="CssId">#</span>meuform</span> <span class="CssTagName">input</span>[type='hidden'][value='']&quot;)<span class="SupportFunction">.length</span>
+</pre>
 
 <p>
   No Safari sempre me retornava 0, já no Firefox e Internet Explorer, retorna 1, que era para ser o valor certo no caso.
   Analisando como o input estava definido eu descobri o problema, ele estava definido assim:
 </p>
 
-{% highlight html %}
-<input type="hidden" name="first_user" />
-{% endhighlight %}
+<pre class="sunburst"><span class="MetaTagInline"><span class="MetaTagInline">&lt;</span><span class="MetaTagInline">input</span> <span class="MetaTagInline">type</span>=<span class="String"><span class="String">&quot;</span>hidden<span class="String">&quot;</span></span> <span class="MetaTagInline">name</span>=<span class="String"><span class="String">&quot;</span>first_user<span class="String">&quot;</span></span> /<span class="MetaTagInline">&gt;</span></span>
+</pre>
 
 <p>Resumindo:</p>
 

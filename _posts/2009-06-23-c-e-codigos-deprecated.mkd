@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "C# e códigos deprecated"
-wordpress_id: 73
-wordpress_url: http://rafaelss.com/?p=73
 ---
 <p>
   Você desenvolve uma biblioteca de utilitários para facilitar a vida dos outros desenvolvedores da empresa,
@@ -15,12 +13,11 @@ wordpress_url: http://rafaelss.com/?p=73
   é o <code>Obsolete</code>, muito útil e fácil de usar.
 </p>
 
-{% highlight c# %}
-[Obsolete("Use o método MinhaClasse.MeuMetodo(int parametro)")]
-public static void MeuMetodo(string parametro) {
-    // ...
+<pre class="sunburst">[Obsolete(<span class="String"><span class="String">&quot;</span>Use o método MinhaClasse.MeuMetodo(int parametro)<span class="String">&quot;</span></span>)]
+<span class="Keyword">public</span> <span class="Keyword">static</span> <span class="Keyword">void</span> MeuMetodo(<span class="Storage">string</span> parametro) {
+    <span class="Comment"><span class="Comment">//</span> ...</span>
 }
-{% endhighlight %}
+</pre>
 
 <p>
   No exemplo acima quero que os desenvolvedores usem a versão que recebe um <code>integer</code> como parâmetro,
@@ -32,9 +29,8 @@ public static void MeuMetodo(string parametro) {
   passando <code>true</code> como segundo parâmetro do atributo.
 </p>
 
-{% highlight c# %}
-[Obsolete("Este método não deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)", true)]
-public static void MeuMetodo(string parametro) {
-    // ...
-}  
-{% endhighlight %}
+<pre class="sunburst">[Obsolete(<span class="String"><span class="String">&quot;</span>Este método não deve mais ser usado. Usar MinhaClasse.MeuMetodo(int parametro)<span class="String">&quot;</span></span>, <span class="Keyword">true</span>)]
+<span class="Keyword">public</span> <span class="Keyword">static</span> <span class="Keyword">void</span> MeuMetodo(<span class="Storage">string</span> parametro) {
+    <span class="Comment"><span class="Comment">//</span> ...</span>
+}
+</pre>

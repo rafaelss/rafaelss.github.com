@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "Permissão para o Apache na pasta home"
-wordpress_id: 45
-wordpress_url: http://rafaelss.com/?p=45
 ---
 <p>
   Muitas vezes quando configuramos um servidor para hospedar sites para diferentes usuários,
@@ -11,8 +9,7 @@ wordpress_url: http://rafaelss.com/?p=45
   A solução que tenho usado é dar a seguinte permissão na pasta do usuário
 </p>
 
-{% highlight sh %}
-chmod a+x /home/nome_do_usuario/  
-{% endhighlight %}
+<pre class="sunburst">chmod a+x /home/nome_do_usuario/
+</pre>
 
 <p>Depois disso todos os "forbidden" desaparecem :)</p>

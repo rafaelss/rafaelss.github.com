@@ -15,16 +15,15 @@ title: "Tradutor simples Inglês/Português e Português/Inglês"
   Para você que tem interesse em saber como funciona traduzir textos com a
   <a href="http://code.google.com/apis/ajaxlanguage/">Language API</a> do Google, veja como é fácil:
 </p>
-{% highlight html %}
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-{% endhighlight %}
+
+<pre class="sunburst"><span class="MetaTagAll"><span class="MetaTagAll">&lt;</span><span class="MetaTagAll">script</span> <span class="MetaTagAll">type</span>=<span class="String"><span class="String">&quot;</span>text/javascript<span class="String">&quot;</span></span> <span class="MetaTagAll">src</span>=<span class="String"><span class="String">&quot;</span>http://www.google.com/jsapi<span class="String">&quot;</span></span><span class="MetaTagAll">&gt;<span class="MetaTagAll">&lt;</span>/</span><span class="MetaTagAll">script</span><span class="MetaTagAll">&gt;</span></span>
+</pre>
 
 <p>e depois</p>
 
-{% highlight js %}
-google.load("language", "1");
+<pre class="sunburst">google.<span class="SupportFunction">load</span>(<span class="String"><span class="String">&quot;</span>language<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span>1<span class="String">&quot;</span></span>);
 
-google.language.translate("texto que eu quero traduzir", "pt", "en", function(result) {
-  // aqui você faz o que quiser com o resultado
+google.<span class="SupportConstant">language</span>.translate(<span class="String"><span class="String">&quot;</span>texto que eu quero traduzir<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span>pt<span class="String">&quot;</span></span>, <span class="String"><span class="String">&quot;</span>en<span class="String">&quot;</span></span>, <span class="Storage">function</span>(result) {
+  <span class="Comment"><span class="Comment">//</span> aqui você faz o que quiser com o resultado</span>
 });
-{% endhighlight %}
+</pre>

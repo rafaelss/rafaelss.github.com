@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "Rails Summit, eu fui!"
-wordpress_id: 31
-wordpress_url: http://stagging.rafaelss.com/?p=31
 ---
 <p>
   Eu sei, eu sei, <a href="http://locaweb.com.br/railssummit/">Rails Summit</a>

@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "PHP e SQL Server 2005"
-wordpress_id: 12
-wordpress_url: http://stagging.rafaelss.com/?p=12
 ---
 <p>
   Se você tem <strong>problemas de conexão com SQL Server 2005</strong> pelo <strong>PHP</strong>,

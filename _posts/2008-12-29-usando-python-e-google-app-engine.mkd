@@ -1,9 +1,11 @@
 --- 
 layout: post
 title: "Usando Python e Google App Engine"
-wordpress_id: 26
-wordpress_url: http://stagging.rafaelss.com/?p=26
 ---
+<p>
+  <strong>UPDATE:</strong> O controle de versão do GAE não é muito <em>"esperto"</em>, acabei mudando de micro e perdi tudo. Então, o site não existe mais.
+</p>
+
 <p>
   No começo do mês recebi a liberação para usar o <a href="http://appengine.google.com/">Google App Engine</a>,
   foi o que faltava para eu dar uma brincada com Python.

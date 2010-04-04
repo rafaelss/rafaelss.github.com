@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "nginx: Redirecionando de um domínio para outro"
-wordpress_id: 28
-wordpress_url: http://stagging.rafaelss.com/?p=28
 ---
 <p>
   Semana passada eu resolvi mudar o domínio do blog, usar algo mais pessoal,
@@ -13,13 +11,12 @@ wordpress_url: http://stagging.rafaelss.com/?p=28
 
 <p>Isso é muito fácil.</p>
 
-{% highlight apacheconf %}
-server {
+<pre class="sunburst">server {
     listen 80;
     server_name joeh.com.br  *.joeh.com.br;
     rewrite ^/(.*) http://rafaelss.com/$1 permanent;
 }
-{% endhighlight %}
+</pre>
 
 <p>
   Com isso todos os links que apontam para o domínio velho são redirecionados para o novo,

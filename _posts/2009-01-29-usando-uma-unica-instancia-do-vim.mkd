@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: "Usando uma única instância do Vim"
-wordpress_id: 8
-wordpress_url: http://stagging.rafaelss.com/?p=8
 ---
 <p>
   Hoje quando li o feed de comentários do <a href="http://eustaquiorangel.com/">blog do TaQ</a>
@@ -15,12 +13,11 @@ wordpress_url: http://stagging.rafaelss.com/?p=8
   dos comentários, que ao invés de usar um alias, usa uma função.
 </p>
 
-{% highlight sh %}
-# http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/
-function edit() {
-    gvim --servername `gvim --serverlist | head -1` --remote-tab "$@";
+<pre class="sunburst"><span class="Comment"><span class="Comment">#</span> http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/</span>
+function <span class="Entity">edit</span>() {
+    gvim --servername <span class="String"><span class="String">`</span>gvim --serverlist | head -1<span class="String">`</span></span> --remote-tab <span class="String"><span class="String">&quot;</span><span class="StringVariable"><span class="StringVariable">$</span>@</span><span class="String">&quot;</span></span><span class="Keyword">;</span>
 }
-{% endhighlight %}
+</pre>
 
 <p>Eu mudei o nome para <code>edit</code>, acho mais fácil, mas fica a critério de cada um :)</p>
 <p>Link do codigo original: <a href="http://pastebin.com/f7a69dcd7">http://pastebin.com/f7a69dcd7</a></p>
