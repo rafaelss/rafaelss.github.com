@@ -1,0 +1,7 @@
+---
+layout: post
+title: Teste
+category: posts
+---
+
+Post de Teste
