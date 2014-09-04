@@ -1,0 +1,9 @@
+title: Rafael Souza
+email: rafael.ssouza@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Desde de 2001 programando pra web. PHP, Java, .NET, Ruby além de outras coisas menos ortodoxas.
+baseurl: ""
+url: "http://rafaelss.com"
+twitter_username: rafaelss
+github_username:  rafaelss
+markdown: kramdown
