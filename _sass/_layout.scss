@@ -188,7 +188,11 @@
     font-size: 24px;
 }
 
-
+.home {
+    .post-link {
+        text-decoration: underline;
+    }
+}
 
 /**
  * Posts
@@ -232,5 +236,9 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    a {
+        text-decoration: underline;
     }
 }
